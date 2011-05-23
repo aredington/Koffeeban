@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+lanes = Lane.create([{name: 'Open'}, {name: 'Development'}, {name: 'Test'}, {name: 'Approved'}])
+lanes.reduce(nil) {|previous, cur| cur.previous_lane = previous; cur.save!; cur}

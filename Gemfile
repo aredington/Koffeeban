@@ -13,6 +13,10 @@ gem 'coffee-script'
 gem 'uglifier'
 
 gem 'jquery-rails'
+gem 'rspec-rails', '>=2.6.1.beta1'
+gem 'factory_girl_rails'
+gem 'mocha'
+gem 'haml'
 
 # Use unicorn as the web server
 # gem 'unicorn'
