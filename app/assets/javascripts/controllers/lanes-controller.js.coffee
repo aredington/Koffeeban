@@ -8,5 +8,6 @@ this.LanesController = Backbone.Controller.extend
   # Fetch the data for the initial page, and display a view with it.
   index: ->
     lanes = new Lanes()
-    lanes.fetch()
     board = new LanesIndex(model: lanes)
+    $('body').append(board.el)
+    lanes.fetch()
