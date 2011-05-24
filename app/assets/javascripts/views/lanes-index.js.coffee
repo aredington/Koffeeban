@@ -21,4 +21,4 @@ this.LanesIndex = Backbone.View.extend
   # objects to the browser console.
   render: ->
     _.each(@model.models, (model) ->
-      console.log(model))
+      console.log(model.name()))

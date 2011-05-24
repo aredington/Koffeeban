@@ -1,4 +1,7 @@
 this.Lane = Backbone.Model.extend
+  initialize: ->
+  name: ->
+    @get("name")
 
 # Lanes is a collection of multiple Lane instances
 this.Lanes = Backbone.Collection.extend
