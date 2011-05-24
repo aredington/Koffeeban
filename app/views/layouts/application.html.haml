@@ -3,13 +3,8 @@
   %head
     %title Koffeeban
     %meta(http-equiv="Content-type" content="text/html; charset=utf-8")
-    %meta(name="Description" content="TireMonkey is an online tire retailer who provides the lowest price tires.")
-    %meta(name="Keywords" content="Lowest Priced Tires")
-    %meta(name="robots" content="index,follow")
-    %meta(name="revisit-after" content="7 days")
-    %meta(name="googlebot" content="index,follow")
-    = stylesheet_link_tag '/assets/screen'
-    = javascript_include_tag '/assets/application'
+    = stylesheet_link_tag '/assets/application'
+    = javascript_include_tag :application
     = csrf_meta_tag
   %body
     = yield    

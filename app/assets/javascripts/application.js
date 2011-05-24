@@ -6,4 +6,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+// require_tree .
+//= require underscore
+//= require backbone
+//= require models/lanes
+//= require views/lanes-index
+//= require controllers/lanes-controller
+new LanesController()
+Backbone.history.start()
