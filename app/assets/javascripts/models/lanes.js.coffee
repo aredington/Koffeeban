@@ -1,5 +1,11 @@
 this.Lane = Backbone.Model.extend
-  initialize: ->
+  # When a backbone model receives a JSON blob in
+  # its constructor, it shoves all of the JSON properties
+  # into an internal attributes hash. These are exposed by
+  # get(name) and set(name, value) methods on the model.
+  # You can directly access the attributes hash, but if
+  # you shove values directly into it event propagation won't
+  # happen. SO DON'T DO IT!
   name: ->
     @get("name")
 
