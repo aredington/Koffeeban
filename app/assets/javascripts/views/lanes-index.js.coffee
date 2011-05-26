@@ -1,5 +1,4 @@
 this.LanesIndex = Backbone.View.extend
-  tagName: "div"
   id: "board"
   # Initialize is called at the end of the view
   # constructor to set up the new view. You can bind to
@@ -21,6 +20,10 @@ this.LanesIndex = Backbone.View.extend
   # from the view's model into the HTML element the view is holding onto.
   # At this stage in the example app, we are simply logging all of the Lane
   # objects to the browser console.
+
+  make: ->
+    $("##{@id}").get()[0]
+
   render: ->
     laneTemplate = _.template(KoffeeTemplates.lane)
     _.each(@model.models, (model) =>

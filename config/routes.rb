@@ -4,8 +4,9 @@ Koffeeban::Application.routes.draw do
   resources :lanes
   resources :templates do
     collection do
-      get 'board'
+      get 'application'
       get 'lane'
+      get 'new_card'
     end
   end
 

@@ -1,6 +1,8 @@
 this.KoffeeTemplates = {
   templatesUrls:
     lane: "/templates/lane"
+    newCard: "/templates/new_card"
+    application: "/templates/application"
   triggerReady: ->
     @trigger("ready")
   init: ->
