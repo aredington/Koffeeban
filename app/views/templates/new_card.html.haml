@@ -1,0 +1,11 @@
+%form#new_card
+  %div.name
+    %label.name_label
+      Name
+    %input.name_input{:name => "name"}
+  %div.description
+    %label.description_label
+      Description
+    %textarea.description_input{:name => "description"}
+  %div.submit
+    %input{:type => "submit", :value => "Create"}
