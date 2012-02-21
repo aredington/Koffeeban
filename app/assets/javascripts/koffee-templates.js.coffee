@@ -4,7 +4,7 @@ this.KoffeeTemplates = {
     newCard: "/templates/new_card"
     application: "/templates/application"
   triggerReady: ->
-    @trigger("ready")saldkf
+    @trigger("ready")
   init: ->
     _.after(_.keys(@templatesUrls).length, @triggerReady)
     _.each(@templatesUrls, (path, name) ->
